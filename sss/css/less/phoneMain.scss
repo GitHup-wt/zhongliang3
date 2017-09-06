@@ -1,0 +1,129 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+html {
+  font-size: 100px;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background: white;
+  position: relative;
+}
+a {
+  text-decoration: none;
+}
+img {
+  border: none;
+  display: block;
+}
+li {
+  list-style: none;
+}
+input {
+  outline: none;
+}
+
+header{
+    width: 100%;
+    height: 2.33rem;
+    background: gray;
+        
+    .hMain_top{
+        width: 100%;
+        height: 0.5rem;
+        display: flex;
+        position: fixed;
+        background: rgba(255,255,255,0);
+        
+        .hMain_top_left{
+            width: 18%;
+            height: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            
+            p{
+                font-size: 0.16rem;
+            }
+            i{
+                display: block;
+                width: 0.24rem;
+                height: 0.24rem;
+                font-size: 0.24rem;
+            }
+        }
+        
+        .hMain_top_center{
+            width: 70%;
+            display: flex;
+            align-items: center;
+            border-radius: 15px;
+            overflow: hidden;
+            i{
+                background: white;
+                width: 10%;
+                height: 0.26rem;
+                font-size: 0.26rem;
+                right: -2px;
+            }
+            input{
+                padding: 5px;
+                background: white;
+                border: none;
+                font-size: 0.14rem;
+                width: 90%;
+            }
+        }  
+        
+        .hMain_top_right{
+            width: 12%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            i{
+                display: block;
+                height: 0.4rem;
+                height: 0.4rem;
+                line-height: 0.44rem;
+                font-size: 0.3rem;
+            }
+            
+        }  
+    }
+}
+
+
+ .sMain_arc2{
+        width: 100%;
+        height: 1.04rem;
+        
+        img{
+            width: 100%;
+        }    
+    }
+.sMain_arc4{
+    width: 100%;
+    
+    ul{
+        width: 100%;
+        height: 100%;
+        
+        li{
+            width: 100%;
+            height: 1.04rem;
+            
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}    
+
+
+

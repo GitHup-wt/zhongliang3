@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>粮油网——购物车</title>
+	<link rel="stylesheet" type="text/css" href="../css/shopCar.css"/>
+</head>
+<body>
+<section>
+	<div class="secShopCar_arc1">
+		<div class="secShopCar_arc1_left">
+			<span>我的购物车</span>
+		</div>
+		<div class="secShopCar_arc1_center">
+			<span>送至：</span>
+			<div class="secShopCar_address">
+				<span>北京海淀区海淀区5环内</span>
+				<i>~</i>
+			</div>
+		</div>
+		<div class="secShopCar_arc1_right">
+			<span>继续购物></span>
+		</div>
+	</div>
+<!--内容区2-->
+	<div class="secShopCar_arc2">
+		<div class="secShopCar_arc2_left">
+			<span>我买网发货单</span>
+		</div>
+		<div class="secShopCar_arc2_right">
+			<span>已选商品(含预估运费):</span>
+			<span>￥236.00</span>
+			<a href="#">去结算</a>
+		</div>
+	</div>
+<!--内容区3-->
+	<div class="secShopCar_arc3">
+		<table border="0" cellspacing="0" cellpadding="0">
+			<tr><th>商品</th><th>单价</th><th>数量</th><th>重量</th><th>小计</th><th>操作</th></tr>
+			<tr>
+				<td>
+					<input id="btnCheckbox" type="checkbox" checked="checked" /><label for="btnCheckbox">常温品</label>
+				</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td>重量合计2.222kg</td>
+				<td>金额合计￥655.90</td>
+			</tr>
+		</table>
+	</div>
+<!--内容区4-->
+	<div class="secShopCar_arc4 secShopCar_arc3">
+		<table class="shopZu" border="0"  cellspacing="0" cellpadding="0">
+			
+			<tr>
+				<td>
+					<input id="btnCheckbox" type="checkbox" checked="checked" />
+					<img src="http://pic3.womai.com/upload/601/603/608/362420/362422/362433/606069/606069_0_pic60_2403.jpg" alt="" />
+					<a> 【自营】玉兰油多效修护SPF15防晒霜50g 赠多效修护洁面乳48g*2</a>
+				</td>
+				<td>￥<span class="danPrice">159.00</span></td>
+				<td>
+					<input type="button" class="del" value="-" />
+					<input type="text" class="count" value="1" />
+					<input type="button" class="add" value="+" />
+				</td>
+				<td>1.152</td>
+				<td>￥<span class="resultPrice">636.00</span></td>
+				<td><a href="#">收藏</a><a class="deTr">删除</a></td>
+			</tr>
+			<tr>
+				<td>
+					<input id="btnCheckbox" type="checkbox" checked="checked" />
+					<img src="http://pic3.womai.com/upload/601/603/608/362420/362422/362433/606069/606069_0_pic60_2403.jpg" alt="" />
+					<a> 【自营】玉兰油多效修护SPF15防晒霜50g 赠多效修护洁面乳48g*2</a>
+				</td>
+				<td>￥<span class="danPrice">121.00</span></td>
+				<td>
+					<input type="button" class="del" value="-" />
+					<input type="text" class="count" value="1" />
+					<input type="button" class="add" value="+" />
+				</td>
+				<td>1.152</td>
+				<td>￥<span class="resultPrice">636.60</span></td>
+				<td><a href="#">收藏</a><a class="deTr">删除</a ></td>
+			</tr>
+			
+		</table>
+	</div>
+<!--内容区5-->
+	<div class="secShopCar_arc5">
+		<div class="secShopCar_bottom">
+			<div class="shopCar_bottom_left">
+				<div class="shopCar_bl_top">
+					<ul>
+						<li>
+							<input id="btnCheckboxQuan" type="checkbox" checked="checked" />
+							<label for="btnCheckboxQuan">全选</label>
+						</li>
+						<li>
+							<span>收藏</span>
+						</li>
+						<li>
+							<span>删除</span>
+						</li>
+					</ul>
+				</div>
+				<div class="shopCar_bl_bottom">
+					<span>先充值再买单更优惠 98折领好礼</span>
+				</div>
+			</div>
+			<div class="shopCar_bottom_right">
+				<div class="shopCar_br_top">
+					<div class="shopCar_br_top_left">
+						<h5>总重量:</h5><span>1.07kg</span>
+					</div>
+					<div class="shopCar_br_top_right">
+						<div class="zong">
+							<h5>预估运费：</h5><span>￥6.00</span>
+						</div>
+						<div class="zong">
+							<h5>商品金额：</h5><span class="totleMoney">￥6.00</span>
+						</div>		
+						<div class="zong">
+							<h5>促销优惠：</h5><span>-￥6.00</span>
+						</div>
+					</div>
+				</div>
+				<div class="shopCar_br_bottom shopCar_br_top">
+						<div class="shopCar_br_top_left">
+							<h5>已选<span>1</span>件</h5>
+						</div>
+						<div class="shopCar_br_top_right">
+							<div class="zong">
+								<h5>应付金额：</h5><span class="totleMoney">￥6.00</span>
+							</div>
+						</div>
+				</div>
+					<div class="shopCar_br_top_jiesuan">
+							<input type="button" value="去结算" />
+						</div>
+			</div>
+		</div>
+	</div>
+</section>
+</body>
+<script src="../writeJs/jquery-1.8.3.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../js/shopCar.js" type="text/javascript" charset="utf-8"></script>
+</html>

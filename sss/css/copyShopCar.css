@@ -1,0 +1,312 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background: white;
+}
+a {
+  text-decoration: none;
+}
+img {
+  border: none;
+  display: block;
+}
+li {
+  list-style: none;
+}
+input {
+  outline: none;
+}
+section {
+  width: 100%;
+}
+section .secShopCar_arc1 {
+  width: 1000px;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 20px 0px;
+  border-bottom: 1px solid #CCCCCC;
+}
+section .secShopCar_arc1 .secShopCar_arc1_left {
+  float: left;
+  margin-right: 30px;
+}
+section .secShopCar_arc1 .secShopCar_arc1_left span {
+  font-size: 19px;
+}
+section .secShopCar_arc1 .secShopCar_arc1_center {
+  float: left;
+  display: flex;
+  align-items: center;
+}
+section .secShopCar_arc1 .secShopCar_arc1_center span {
+  font-size: 12px;
+  padding-right: 5px;
+}
+section .secShopCar_arc1 .secShopCar_arc1_center .secShopCar_address {
+  border: 1px solid #CCCCCC;
+  display: flex;
+  align-items: center;
+  padding: 0px 3px;
+}
+section .secShopCar_arc1 .secShopCar_arc1_center .secShopCar_address span {
+  font-size: 12px;
+}
+section .secShopCar_arc1 .secShopCar_arc1_right {
+  float: right;
+}
+section .secShopCar_arc1 .secShopCar_arc1_right span {
+  font-size: 12px;
+}
+section .secShopCar_arc2 {
+  width: 1000px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+section .secShopCar_arc2 .secShopCar_arc2_left {
+  float: left;
+}
+section .secShopCar_arc2 .secShopCar_arc2_left span {
+  display: block;
+  padding: 10px 20px;
+  color: #8BC34A;
+  border-bottom: 2px solid #8BC34A;
+}
+section .secShopCar_arc2 .secShopCar_arc2_right {
+  float: right;
+  display: flex;
+  overflow: hidden;
+  padding: 10px 0px;
+}
+section .secShopCar_arc2 .secShopCar_arc2_right span {
+  font-size: 14px;
+}
+section .secShopCar_arc2 .secShopCar_arc2_right span:nth-child(1) {
+  margin-right: 10px;
+}
+section .secShopCar_arc2 .secShopCar_arc2_right span:nth-child(2) {
+  font-size: 16px;
+  margin-right: 10px;
+  color: #C40000;
+}
+section .secShopCar_arc2 .secShopCar_arc2_right a {
+  display: block;
+  color: white;
+  padding: 2px 3px;
+  background: #C40000;
+  font-size: 14px;
+}
+section .secShopCar_arc3 {
+  width: 1000px;
+  padding-top: 20px;
+  margin: 0px auto;
+}
+section .secShopCar_arc3 table {
+  width: 100%;
+}
+section .secShopCar_arc3 table tr th {
+  font-size: 13px;
+  padding-bottom: 30px;
+}
+section .secShopCar_arc3 table tr td {
+  height: 20px;
+  width: 90px;
+  padding: 0px 15px;
+  font-size: 12px;
+  color: #A9A9A9;
+  white-space: nowrap;
+}
+section .secShopCar_arc3 table tr td input {
+  vertical-align: middle;
+}
+section .secShopCar_arc3 table tr td label {
+  vertical-align: middle;
+}
+section .secShopCar_arc3 table tr td:nth-child(1) {
+  width: 490px;
+}
+section .secShopCar_arc3 table tr td:nth-child(1) a {
+  display: block;
+  width: 324px;
+  white-space: pre-wrap;
+}
+section .secShopCar_arc4 table {
+  width: 100%;
+  border: 1px solid #A9A9A9;
+}
+section .secShopCar_arc4 table tr td {
+  text-align: center;
+  height: 60px;
+  padding: 15px;
+  color: #383838;
+  border-bottom: 1px solid #A9A9A9;
+}
+section .secShopCar_arc4 table tr td:nth-child(1) {
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
+section .secShopCar_arc4 table tr td:nth-child(1) img {
+  padding: 0px 10px;
+}
+section .secShopCar_arc4 table tr td:nth-child(1) a {
+  color: #383838;
+}
+section .secShopCar_arc4 table tr td:nth-child(1) a:hover {
+  color: #8BC34A;
+  text-decoration: underline;
+}
+section .secShopCar_arc4 table tr td:nth-child(3) input {
+  text-align: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+}
+section .secShopCar_arc4 table tr td:nth-child(3) input:nth-child(2) {
+  border: 1px solid #DDDDDD;
+  width: 40px;
+  border-radius: 0;
+}
+section .secShopCar_arc4 table tr td:nth-child(4) {
+  color: #A9A9A9;
+}
+section .secShopCar_arc4 table tr td:nth-child(5) {
+  font-weight: bolder;
+  color: #DD0800;
+}
+section .secShopCar_arc4 table tr td:nth-child(6) a {
+  display: block;
+  color: #000;
+  padding-bottom: 4px;
+}
+section .secShopCar_arc4 table tr td:nth-child(6) a:nth-child(2) {
+  color: #606060;
+}
+section .secShopCar_arc4 table tr td:nth-child(6) a:nth-child(1):hover {
+  color: #FFA500;
+  text-decoration: underline;
+}
+section .secShopCar_arc4 table tr td:nth-child(6) a:nth-child(2):hover {
+  color: #8BC34A;
+  text-decoration: underline;
+}
+section .secShopCar_arc5 {
+  width: 1000px;
+  height: 500px;
+  margin: 0 auto;
+}
+section .secShopCar_arc5 .shopCar_bottom_left {
+  width: 400px;
+  float: left;
+}
+section .secShopCar_arc5 .shopCar_bottom_left .shopCar_bl_top {
+  width: 100%;
+}
+section .secShopCar_arc5 .shopCar_bottom_left .shopCar_bl_top ul {
+  width: 100%;
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+section .secShopCar_arc5 .shopCar_bottom_left .shopCar_bl_top ul li {
+  padding: 0px 10px;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+}
+section .secShopCar_arc5 .shopCar_bottom_left .shopCar_bl_top ul li span:hover {
+  text-decoration: underline;
+}
+section .secShopCar_arc5 .shopCar_bottom_left .shopCar_bl_bottom {
+  width: 100%;
+  margin-top: 60px;
+  padding: 0px 10px;
+}
+section .secShopCar_arc5 .shopCar_bottom_left .shopCar_bl_bottom span {
+  font-size: 13px;
+  color: red;
+}
+section .secShopCar_arc5 .shopCar_bottom_left .shopCar_bl_bottom span:hover {
+  text-decoration: underline;
+}
+section .secShopCar_arc5 .shopCar_bottom_right {
+  width: 500px;
+  float: right;
+  background: white;
+  padding-right: 10px;
+}
+section .secShopCar_arc5 .shopCar_bottom_right .shopCar_br_top {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #A9A9A9;
+}
+section .secShopCar_arc5 .shopCar_bottom_right .shopCar_br_top .shopCar_br_top_left {
+  height: 30px;
+  line-height: 30px;
+  display: flex;
+}
+section .secShopCar_arc5 .shopCar_bottom_right .shopCar_br_top .shopCar_br_top_left h5 {
+  font-weight: normal;
+  color: #757575;
+  margin-right: 10px;
+}
+section .secShopCar_arc5 .shopCar_bottom_right .shopCar_br_top .shopCar_br_top_left span {
+  color: #A9A9A9;
+  font-size: 12px;
+}
+section .secShopCar_arc5 .shopCar_bottom_right .shopCar_br_top .shopCar_br_top_right .zong {
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+  height: 30px;
+  line-height: 30px;
+}
+section .secShopCar_arc5 .shopCar_bottom_right .shopCar_br_top .shopCar_br_top_right .zong h5 {
+  width: 100px;
+  font-weight: normal;
+  color: #757575;
+}
+section .secShopCar_arc5 .shopCar_bottom_right .shopCar_br_top .shopCar_br_top_right .zong span {
+  color: red;
+  font-size: 12px;
+}
+section .secShopCar_arc5 .shopCar_bottom_right .shopCar_br_top .shopCar_br_top_right .zong:nth-child(3) span {
+  color: #8BC34A;
+}
+section .secShopCar_arc5 .shopCar_bottom_right .shopCar_br_bottom {
+  border-bottom: 1px solid transparent;
+}
+section .secShopCar_arc5 .shopCar_bottom_right .shopCar_br_bottom .shopCar_br_top_left h5 {
+  display: flex;
+}
+section .secShopCar_arc5 .shopCar_bottom_right .shopCar_br_bottom .shopCar_br_top_left h5 span {
+  display: block;
+  padding: 0px 3px;
+  font-size: 22px;
+  color: red;
+}
+section .secShopCar_arc5 .shopCar_bottom_right .shopCar_br_bottom .shopCar_br_top_right .zong span {
+  display: block;
+  font-size: 22px;
+  color: red;
+}
+section .secShopCar_arc5 .shopCar_bottom_right .shopCar_br_top_jiesuan {
+  margin-top: 30px;
+}
+section .secShopCar_arc5 .shopCar_bottom_right .shopCar_br_top_jiesuan input {
+  width: 170px;
+  height: 36px;
+  float: right;
+  background: #FF860F;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 3px;
+}
+/*# sourceMappingURL=shopCar.css.map */

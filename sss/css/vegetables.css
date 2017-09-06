@@ -1,0 +1,154 @@
+
+.goods .goods_box{
+	background: #3ea6cf;
+}
+#vleiShop{
+	background: #3ea6cf;
+}
+.goods .goods_box #vleiShop li{
+	list-style: none;
+	}
+#vleiShop li>div{
+	border-bottom: 1px solid whitesmoke;
+	margin-left: 15px;
+	margin-right: 15px;
+	padding: 10px 0px;
+	color: white;
+}
+#vleiShop li div>span{
+	
+	display: block;
+}
+#vleiShop li div>span span{
+	float: right;
+	text-align: right;
+}
+#vleiShop li span a{
+	font-size: 14px;
+}
+#vleiShop li a{
+	margin: 0 auto;
+	padding: 5px 0px;
+	font-size: 9px;
+	color: white;
+} 
+#vleiShop li:hover span{
+	color:#3ea6cf;
+}
+#vleiShop li:hover a{
+	color:#3ea6cf;
+}
+.secv_arc2{
+	width: 1200px;
+	margin: 0 auto;
+	/*background: red;*/
+}
+.secv_arc2>p{
+	padding: 30px 0px 10px 0px;
+	text-indent: 16px;
+	font-size: 19px;
+}
+.secv2_top ul{
+	display: flex;
+	justify-content: space-between;
+}
+.secv2_top ul li{
+	list-style: none;
+	position: relative;
+	width: 226px;
+	height: 370px;
+	background: white;
+	box-sizing: border-box;
+	border: 1px solid #757575;
+}
+.secv2_top ul li:hover{
+	box-sizing: border-box;
+	border: 6px solid #757575;
+}
+.secv2_goods{
+	position: absolute;
+	left: 50%;
+	top:50%;
+	margin-left: -93px;
+	margin-top: -161px;
+	width: 186px;
+	height: 322px;
+	background: white;
+	overflow: hidden;
+}
+.secv2_goods a{
+	display: block;
+	width: 180px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-indent: 5px;
+	margin-bottom: 10px;
+	color: #606060;
+}
+.secv2_top ul li:hover a{
+		color: #8BC34A;
+		text-decoration: underline;
+}
+.secv2_goods span{
+	display: block;
+	font-size: 13px;
+	color: red;
+	margin-bottom:10px;
+}
+.secv2_goods img{
+	width: 100%;
+
+}
+
+.secv2_car{
+	position: relative;
+	width: 100%;
+	height: 130px;
+	background: rgba(255,255,255,0.6);
+	display: flex;
+	justify-content: center;
+	margin-top:33px;
+	overflow: hidden;
+}
+.secv2_car span{
+	display: block;
+	color: red;
+	margin-top:20px ;
+	font-size: 14px;
+	font-weight: border;
+}
+.secv2_car span:nth-child(2){
+	font-weight: border;
+	margin-top:15px ;
+	font-size: 19px;
+}
+.secv2_top ul li:hover .secv2_car{
+	margin-top:-53px ;
+}
+.secv2_car p{
+	position: absolute;
+	width: 100%;
+	top: 70px;
+	display: flex;
+	text-align: left;
+	font-size: 13px;
+	color: #757575;
+}
+.secv2_car p span{
+	font-size: 13px;
+	color: #757575;
+	margin-top: 0px;
+}
+.btnCar{
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+	height: 24px;
+	background: red;
+	color: white;
+	border: none;
+	outline: none;
+	border-radius: 3px;
+}
+
+

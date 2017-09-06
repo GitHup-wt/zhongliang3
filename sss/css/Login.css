@@ -1,0 +1,226 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{
+	margin:0px;
+	padding:0px;
+	}
+html,body{
+	width:100%;
+	height:100%;
+	}
+img{
+	display:block;
+	border:0px;
+	}
+a{
+	text-decoration:none;
+	}
+/*头部主体*/
+.register_top{
+	width:1000px;
+	height:626px;
+	margin:0 auto;
+	}
+.header{
+	width:100%;
+	height:88px;
+	padding-top:8px;
+	}
+.header_logo{
+	width:210px;
+	height:80px;
+	padding-left:10px;
+	}
+.header_logo a{
+	text-decoration:none;
+	}
+.header_line{
+	width:100%;
+	height:3px;
+	margin-top:5px;
+	background:url(../img/registerImg/login.png) 0px 0px repeat-x;
+	}
+
+/*内容主体*/
+.content{
+	width:100%;
+	height:500px;
+	margin:20px 0px 10px 0px;
+	position:relative;
+	}
+.content_beijing{
+	position:absolute;
+	}
+.content_left{
+	position:absolute;
+	z-index:1;
+	width:380px;
+	height:443px;
+	top:30px;
+	right:34px;
+	background:#f7f8f8;
+	border:4px solid #dcdddd;
+	}
+.cl_inset{
+	width:306px;
+	height:405px;
+	margin:20px 36px;
+	}
+.cl_shou{
+	width:100%;
+	height:20px;
+	line-height:20px;
+	}
+.cl_shou_left{
+	font-size:16px;
+	float:left;
+	}
+.cl_shou_right{
+	font-size:12px;
+	float:right;
+	color: #aaaaaa;
+	}
+.cl_shou_right a{
+	color:#8cb91e;
+	}
+.cl_form{
+	color:#aaaaaa;
+	font-size:12px;
+	}
+.cl_form input{
+	width:292px;
+	height:16px;
+	margin-top:30px;
+	padding:5px;
+	border:1px solid #aaaaaa;
+	color:#aaaaaa;
+	outline:none;
+	}
+.cl_form .aPw{
+	font-size:13px;
+	line-height:30px;
+	display:block;
+	float:right;
+	color:#aaaaaa;
+	}
+.cl_form a+input{
+		margin-top:0px;
+	}
+.registerLogin{
+	overflow:hidden;
+	}
+.cl_form .registerBtn{
+	width:79px;
+	height:30px;
+	border-radius:5px;
+	float:right;
+	font-size:16px;
+	color:#479202;
+	background:url(../img/registerImg/login.png) -89px -150px;
+	}
+.cl_form .LoginBtn{
+	width:200px;
+	height:30px;
+	border:none;
+	border-radius:5px;
+	color:white;
+	font-size:16px;
+	float:left;
+	background:url(../img/registerImg/login.png) 0px -6px;
+	}
+
+hr{
+	width:100%;
+	height:1px;
+	border:none;
+	margin-top:25px;
+	background:url(../img/loginImg/line_03.png) repeat-x;
+	}
+.friend_word{
+	color:black;
+	font-size:13px;
+	line-height:45px;
+	}
+li{
+	list-style:none;
+	float:left;
+	
+	border-right:1px solid #dcdddd;
+	}
+.friend ul li{
+	height:20px;
+	padding:0px 10px;
+	margin-top:15px;
+	}
+.friend ul li i{
+	display:block;
+	width:16px;
+	height:20px;
+	float:left;
+	}
+.friend ul li:nth-child(1) i{
+	background:url(../img/registerImg/login.png) right -75px no-repeat;
+	}
+.friend ul li:nth-child(2) i{
+	background:url(../img/registerImg/login.png) right -96px no-repeat;
+	}
+.friend ul li:nth-child(3) i{
+	background:url(../img/registerImg/login.png) right -117px no-repeat;
+	}
+.friend ul li:nth-child(4) i{
+	background:url(../img/registerImg/login.png) right -138px no-repeat;
+	}
+.friend ul li:nth-child(5) i{
+	background:url(../img/registerImg/login.png) right -159px no-repeat;
+	}
+.friend ul li:nth-child(6) i{
+	background:url(../img/registerImg/login.png) right -180px no-repeat;
+	}
+.friend ul li:nth-child(7) i{
+	background:url(../img/registerImg/login.png) right -201px no-repeat;
+	}
+.friend ul li:nth-child(8) i{
+	background:url(../img/registerImg/login.png) right -222px no-repeat;
+	}
+.friend ul li:nth-child(9) i{
+	background:url(../img/registerImg/login.png) right -242px no-repeat;
+	}
+.friend ul li a{
+	float:right;
+	display:block;
+	font-size:13px;
+	color:#aaaaaa;
+	margin-left:3px;
+	
+	}
+/*底部*/
+.register_bottom{
+	width:100%;
+	 
+	}
+.bottom_content{
+	width:100%;
+	height:78px;
+	padding-top:20px;
+	background:#efefef;
+	}
+.bottom_content p{
+	text-align:center;
+	font-size:12px;
+	color:#aaaaaa;
+	line-height:24px;
+
+	}
+.bottom_content p a{
+	color:#aaaaaa;
+	padding-right:5px;
+	}
+.bottom_content p a:hover{
+	text-decoration:underline;
+	}
+.bottom_dibu{
+	width:100%;
+	height:28px;
+	background:#8cb91e;
+	}
