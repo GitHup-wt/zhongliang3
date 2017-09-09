@@ -147,6 +147,8 @@
   border: 1px solid #B1B3AF;
 }
 .sGood_arc1 .sGood_arc1_mid .sGm_right .sGm_right_center1 .sGm_right_center1_arc3 .jisuan input {
+	width: 25px;
+	text-align: center;
   border: none;
   outline: none;
 }

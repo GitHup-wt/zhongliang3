@@ -17,6 +17,7 @@ function Screate(tagName){
 	return document.createElement(tagName);
 	
 }
+var boxDomWidth;
 var instanceSetMirror = null;
 function setMirror(obj){
 	var objDom = {
@@ -76,11 +77,14 @@ class Mirror{
 		
 		this.boxDom.appendChild(this.mirrorDom);
 		
-		this.boxImgDom.cssStr+="left:"+(this.boxDom.offsetWidth+5)+"px;width:"+this.width*this.mult+"px;height:"+this.height*this.mult+"px;";
+		boxDomWidth =  parseInt(getStyle(this.boxDom,"width"));
+		
+		
+		this.boxImgDom.cssStr+="left:"+(boxDomWidth+10)+"px;width:"+this.width*this.mult+"px;height:"+this.height*this.mult+"px;";
 		this.boxImgDom.style.cssText = this.boxImgDom.cssStr;
 		this.boxDom.appendChild(this.boxImgDom);
 		
-		this.oImgDom.cssStr = "position:absolute;width:"+this.boxDom.offsetWidth*this.mult+"px;height:"+this.boxDom.offsetHeight*this.mult+"px;"
+		this.oImgDom.cssStr = "position:absolute;width:"+boxDomWidth*this.mult+"px;height:"+this.boxDom.offsetHeight*this.mult+"px;"
 		this.oImgDom.style.cssText = this.oImgDom.cssStr;
 		this.oImgDom.src = this.bgImg;
 		this.boxImgDom.appendChild(this.oImgDom);
@@ -115,13 +119,13 @@ class Mirror{
 				obj.mirrorDom.style.top = top+"px";
 				
 				obj.oImgDom.style.left = -1*obj.mult*left+"px";
-				obj.oImgDom.style.top= -1*obj.mult*top+"px";	
-				
+				obj.oImgDom.style.top= -1*obj.mult*top+"px";
 				
 				if(evt.pageX>obj.boxDom.offsetLeft+obj.boxDom.offsetWidth){
-					obj.mirrorDom.style.display = "none";
-					obj.boxImgDom.style.display = "none";
-				}
+                    obj.mirrorDom.style.display = "none";
+                    obj.boxImgDom.style.display = "none";
+                }
+				
 			}
 			obj.boxDom.onmouseleave = function(){
 				obj.mirrorDom.style.display = "none";
@@ -129,3 +133,13 @@ class Mirror{
 			}
 	}
 }
+
+
+function getStyle(obj,attr){
+	if(obj.currentStyle){
+		return obj.currentStyle[attr];
+		}else{
+			return getComputedStyle(obj,false)[attr];
+			}
+	
+	}

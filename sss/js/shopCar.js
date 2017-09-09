@@ -35,7 +35,7 @@ $.ajax({
 	});
 
 function createGood(arr){
-	tr = $('<tr><td><input id="btnCheckbox" type="checkbox" checked="checked" /><img src="'+arr.imgs+
+	tr = $('<tr><td><input id="btnCheckbox" class="btnCheckbox" type="checkbox" checked="checked" /><img src="'+arr.imgs+
 	'" alt="" /><a>'+arr.goodsName+
 	'</a></td><td>￥<span class="danPrice">'+arr.danPrice+
 	'</span></td><td><input type="button" class="del" value="-" /><input type="text" class="count" value="'+arr.goodsCount+
@@ -121,18 +121,79 @@ $(".deTr").live("click",function(){
 	
 });
 
-//总计金额
+
+//总计金额和数量
 function totleMoney(){
 	let totleMoney = 0;
+	let totleCount=0;
+//计算总的数量
+//计算总金额
+	
+	
 	$(".resultPrice").each(function(i){
-		totleMoney += parseFloat($(this).html());
+		if($(".btnCheckbox").eq(i).attr("checked")=="checked"){
+			totleMoney += parseFloat($(this).html());
+			totleCount+=parseInt($(".count").eq(i).val());
+		}
 	})
 	
 	$(".totleMoney").html("￥"+totleMoney);
+	$(".totleCount").html(totleCount);
 }
 
+$("#btnCheckboxQuan").click(function(){
+	if($("#btnCheckboxQuan")[0].checked == true){
+		$(".btnCheckbox").each(function(i){
+			$(".btnCheckbox").eq(i)[0].checked=true;
+		});
+	}else{
+		$(".btnCheckbox").each(function(i){
+			$(".btnCheckbox").eq(i)[0].checked=false;
+			
+		});
+	}
+	
+	let tshang = false;
+	let tquan = true;
+	xuanze(tshang,tquan);
+});
 
-
+$(".btnCheckbox").live("click",function(){
+	totleMoney();
+	let tshang = false;
+	let tquan = true;
+	
+	xuanze(tshang,tquan);
+	
+});
+let tshang = false;
+let tquan = true;
+xuanze(tshang,tquan);
+function xuanze(tshang,tquan){
+		$(".btnCheckbox").each(function(i){
+			if($(".btnCheckbox").eq(i).attr("checked")=="checked"){
+				tshang = true;
+			}
+		});
+	
+		$(".btnCheckbox").each(function(i){
+			if($(".btnCheckbox").eq(i)[0].checked==false){
+				tquan = false;
+			}
+		});
+		if(tshang==true){
+			$("#btnCheckbox")[0].checked = true;
+		}else{
+			$("#btnCheckbox")[0].checked = false;
+		}
+		if(tquan==true){
+			$("#btnCheckboxQuan")[0].checked = true;
+		}else{
+			$("#btnCheckboxQuan")[0].checked = false;
+		}
+		
+		totleMoney();
+}
 
 
 
